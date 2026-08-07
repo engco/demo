@@ -27,11 +27,62 @@ body {
   padding: 0 24px;
 }
 
+.site-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+
+.nav-inner .brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.nav-inner ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-inner ul li a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-inner ul li a:hover {
+  color: var(--accent);
+}
+
+.nav-inner ul li a.current {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 .hero {
   background: var(--accent);
   color: #fff;
   padding: 64px 0 48px;
   text-align: center;
+}
+
+.hero-small {
+  padding: 40px 0 32px;
 }
 
 .eyebrow {
@@ -72,6 +123,15 @@ h3 {
   margin: 0 0 6px;
   font-size: 1.1rem;
   color: var(--accent);
+}
+
+main a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 p {
